@@ -12,12 +12,11 @@
     </properties>
 
     <dependencies>
-
-       <dependency>
+        <dependency>
          <groupId>mysql</groupId>
          <artifactId>mysql-connector-java</artifactId>
          <version>8.0.21</version>
-       </dependency>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
@@ -27,7 +26,4 @@
         </dependency>
 
     </dependencies>
-
-
-
 </project>
