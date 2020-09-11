@@ -1,7 +1,14 @@
 
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class TestSingleTable extends TestBase{
+
+    @BeforeClass
+    public static void setUp(){
+        System.out.println("connected to database");
+    }
 
     @Test
     public void test001InsertData(){
@@ -19,6 +26,11 @@ public class TestSingleTable extends TestBase{
     public void test003DeleteData(){
         String sql = "delete From student where studentName = 'Jammy'";
         apiRequest(null,null,'D',sql);
+    }
+
+    @AfterClass
+    public static void tearDown(){
+        System.out.println("exit");
     }
 
 }
