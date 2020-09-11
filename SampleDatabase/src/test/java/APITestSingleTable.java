@@ -3,7 +3,7 @@ import org.junit.Test;
 
 public class APITestSingleTable extends TestBase{
 
-    @Test
+    //@Test
     public void test001InsertData(){
         String sql = "INSERT INTO student (studentName, department) VALUES (? , ?)";
         apiRequest("Jammy","ECE",'P',sql);
@@ -15,9 +15,9 @@ public class APITestSingleTable extends TestBase{
         apiRequest(null,null,'S',sql);
     }
 
-    @Test
+    //@Test
     public void test003DeleteData(){
-        String sql = "delete From student where id = 6";
+        String sql = "delete From student where studentName = 'Pretty'";
         apiRequest(null,null,'D',sql);
     }
 
