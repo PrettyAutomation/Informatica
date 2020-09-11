@@ -57,10 +57,4 @@ public class TestBase {
         }
     }
 
-    //Method to create table
-    public void createTable(){
-
-
-    }
-
 }

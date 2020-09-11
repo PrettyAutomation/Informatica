@@ -17,7 +17,7 @@ public class Sample {
             //Insert first record
             String sql  ="INSERT INTO student (studentName, department) VALUES (? , ?)";
             PreparedStatement stmt = conn.prepareStatement(sql);
-            stmt.setString(1, "jhon");
+            stmt.setString(1, "jammy");
             stmt.setString(2, "CSE");
             int rows = stmt.executeUpdate();
             if(rows >0){
