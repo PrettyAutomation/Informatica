@@ -57,7 +57,7 @@ public class TestDatabase extends TestBase {
     public void deleteData(){
         //Select Record
         try {
-            String sql = "delete From student where id = 6";
+            String sql = "delete From student where studentName = 'Pretty'";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.executeUpdate();
         }catch (Exception e){
